@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    margin: 0 auto;
+    display: block;
+}
+
+.search {
+    background-color: rgb(231, 231, 231);
+    text-align: center;
+    margin: 2px ;
+    width: 1450px;
+    height: 90px;
+}
+
+.content {
+    background-color: white;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.leftbar {
+    background-color:#7ee5c8;
+    width: 500px;
+    height: 80px;
+    float: left;
+    text-align: center; 
+    margin: 0 3px;
+
+}
+
+.middlebar {
+    float: left;
+    background-color: rgb(73, 198, 167);
+    text-align: center;
+    width: 250px;
+    height: 80px;
+    margin: 0 3px;
+
+}
+
+.rightbar {
+    width: 570px;
+    height: 80px;
+    background-color: rgb(25, 138, 125);
+    float: left;
+    padding: 0 60px;
+}
+.footer{
+    text-align: center;
+}
