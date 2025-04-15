@@ -82,6 +82,7 @@ article{
 .article-end a:hover{
     color: #fff;
     background-color: #0ba2c0;
+    transform: scale(1.05);
 
 }
 @media(max-width:600px){
