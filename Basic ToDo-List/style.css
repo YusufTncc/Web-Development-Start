@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow-x: hidden;
+    transition: 600ms;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+.btn{
+    padding: 10px;
+    border: none;
+    font-weight: 100;
+    cursor: pointer;
+    color: #fff;
+}
+#submit{
+    background-color: rgb(18, 237, 18);
+}
+#reset{
+    background-color: rgb(255, 202, 12);
+}
+#clear{
+    background-color: red;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.ToDo-head h1{
+    color: rgb(255, 115, 0);
+    font-size: 50px;
+    font-weight: 400;
+}
+input{
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-color: lightgrey;
+    color: rgb(255, 115, 0);
+    border-radius: 15px;
+    padding:8px;
+}
+form{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+label{
+    font-size: 30px;
+    color: rgb(255, 115, 0);
+    font-weight:400;
+}
+#ToDo-List{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.ToDo-List-Items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgrey;
+    width: 100vh;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 20px;
+    color: rgb(255, 115, 0);
+    cursor: pointer;
+}
+.Listli{
+    background-color: rgb(76, 76, 89);
+    text-decoration: line-through;
+}
+.LiRemove{
+    background-color: rgb(255, 115, 0);
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ToDo-List-Items p::before{
+    content: "• " ;
+    color: rgba(190, 58, 6, 0.984);
+}
+
+.alert{
+    display: none;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    font-weight: 400;
+    background-color: rgb(211, 211, 211,0.5);
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+}
+.alert span{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    color: black;
+}
