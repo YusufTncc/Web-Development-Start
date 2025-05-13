@@ -1,0 +1,178 @@
+/*! Font Family Add */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*! Font Family Add */
+
+/* ? Reset and Main Css */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #fdfae7;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* ? Reset and Main Css */
+
+/* ! Head Css Start */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+h1 {
+    font-size: 70px;
+    animation: h1 2s, borderh1 .5s infinite;
+    white-space: nowrap;
+    border-right: 3px solid;
+}
+
+/* ? Mini Animation For Head Text */
+@keyframes h1 {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes borderh1 {
+    from {
+        border-right-color: black;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/* ? Mini Animation For Head Text */
+
+form {
+    display: flex;
+    gap: 15px;
+}
+
+input {
+    border: none;
+    outline: none;
+    width: 300px;
+    font-size: 25px;
+    font-weight: 100;
+    padding: 12px;
+}
+
+.inputtodo button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 20px;
+    height: 110%;
+    text-align: center;
+    background-color: black;
+    color: blanchedalmond;
+
+}
+
+.inputtodo {
+    overflow: hidden;
+    border-radius: 35px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 20px;
+    background-color: rgb(244, 215, 112);
+    color: #fff;
+    border-radius: 30px;
+}
+
+/* ! Head Css Start */
+
+/* ToDo List Css Start */
+
+.todos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 15px;
+    margin: 0 20%;
+    box-shadow: 0 0 5px black;
+
+}
+
+.List-item {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 15px;
+    box-shadow: 0 0 5px black;
+}
+
+.List-item span {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 25px;
+}
+
+.List-item span:first-child {
+    cursor: pointer;
+}
+
+.List-item span:last-child {
+    color: rgb(244, 215, 112);
+    cursor: pointer;
+}
+
+.List-item span i {
+    color: rgb(244, 215, 112);
+    cursor: pointer;
+}
+
+/* ToDo List Css Start */
+
+
+/* ! Alert Css Start */
+
+.alert {
+    display: none;
+    color: #fff;
+    background-color: rgba(255, 0, 0, 0.8);
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* ! Alert Css End */

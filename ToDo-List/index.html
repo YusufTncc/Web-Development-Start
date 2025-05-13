@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo | List</title>
+
+    <!-- Font Awesome icon Add
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    Font Awesome icon Add -->
+
+
+    <!-- ! Style Css Add -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ! Style Css Add -->
+</head>
+
+<body>
+
+
+
+    <!-- ! Alerts Start -->
+    <div class="alert">
+        <p>The List Cannot be Empty</p>
+    </div>
+    <!-- ! Alerts End -->
+
+    <!-- ? Todo Head Start-->
+    <header>
+        <div class="container">
+            <h1>Things To Do</h1>
+            <form action="#">
+                <div class="inputtodo">
+                    <input type="text" id="todo-Input">
+                    <button id="add-button">Add</button>
+                </div>
+                <button class="btn clearbtn">Clear ToDo's</button>
+            </form>
+        </div>
+    </header>
+    <!-- ? Todo Head End-->
+
+    <!-- ToDo List Start -->
+    <section>
+        <ul class="todos"></ul>
+    </section>
+    <!-- ToDo List End -->
+
+
+
+    <!-- ! Script Js Add -->
+    <script src="script.js"></script>
+    <!-- ! Script Js Add -->
+</body>
+
+</html>
